@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1028854787519",
+    "firebase_url": "https://volunteery-52b2a.firebaseio.com",
+    "project_id": "volunteery-52b2a",
+    "storage_bucket": "volunteery-52b2a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028854787519:android:708e217a37ec6872",
+        "android_client_info": {
+          "package_name": "com.flytechnology.volunteery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1028854787519-5i2tls8136djl2p58so8j1rkls70rt26.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyComUY8rD78HL95NB-mbCDUbEdPP_U3vbM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

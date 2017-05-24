@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_view_jobs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewJobs"
+    android:background="@drawable/single_bg">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:id="@+id/back"
+        android:src="@drawable/back"
+        android:scaleType="fitXY"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_title_user_name"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlue"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:text="User Name"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_view_jobs"
+        android:layout_marginRight="20dp"
+      android:layout_marginLeft="20dp"
+        android:textAllCaps="false"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:text="Volunteery"
+        android:textColor="@color/colorBlue"
+        android:background="@drawable/button_shap"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_view_profile"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/bt_view_jobs"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:text="Profile"
+        android:textColor="@color/colorBlue"
+        android:background="@drawable/button_shap"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_logout"
+        android:layout_below="@+id/bt_view_profile"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Log Out"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true" />
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:id="@+id/list_view_jobs"
+        android:layout_marginBottom="50dp"
+        android:clickable="false"
+        android:dividerHeight="5dp"
+        android:visibility="gone"></ListView>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/progress" >
+    </ProgressBar>
+
+
+</RelativeLayout>

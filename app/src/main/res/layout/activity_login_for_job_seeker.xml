@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login_for_job_seeker"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginForJobSeeker"
+    android:background="@drawable/single_bg">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:id="@+id/back"
+        android:src="@drawable/back"
+        android:scaleType="fitXY"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Volunteery"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/white_box">
+
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/person_image"
+            android:scaleType="fitXY"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:id="@+id/et_email"
+            android:hint="Email"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/osloGray"
+            android:textColorHint="@color/osloGray"
+            android:paddingLeft="10dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edit_text_shap"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/et_password"
+            android:layout_gravity="center"
+            android:hint="Password"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="10dp"
+            android:textColor="@color/osloGray"
+            android:textColorHint="@color/osloGray"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edit_text_shap"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:text="Click To Register"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"
+            android:id="@+id/tv_register"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bt_login"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorBlue"/>
+
+
+</RelativeLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/progress" >
+    </ProgressBar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_register1"
+        android:textAlignment="center"
+        android:text="Register"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/colorWhite"/>
+
+</RelativeLayout>

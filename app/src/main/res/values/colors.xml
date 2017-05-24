@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorYellow">#FFFF00</color>
+    <color name="colorWhite">#ffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="buttonsColor">#e46c5b</color>
+    <color name="bacgroudSilver">#f2ecd6</color>
+    <color name="colorBlue">#2c81c2</color>
+    <color name="gulfStream">#89b7b4</color>
+    <color name="osloGray">#8E9293</color>
+    <color name="cello">#204f63</color>
+    <color name="voila">#cd98c2</color>
+    <color name="william">#395c5e</color>
+    <color name="opal">#a8c6be</color>
+    <color name="snuff">#d7d5eb</color>
+    <color name="fiord">#3b5866</color>
+</resources>

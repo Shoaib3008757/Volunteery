@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registring_job_seeker"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistringJobSeeker"
+    android:background="@drawable/single_bg">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:id="@+id/back"
+        android:src="@drawable/back"
+        android:scaleType="fitXY"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Volunteery"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView"
+        android:visibility="visible"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/white_box">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlue"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/et_first_name"
+                android:hint="Name"
+                android:paddingLeft="10dp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/osloGray"
+                android:textColorHint="@color/osloGray"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edit_text_shap"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/et_student_id"
+            android:paddingLeft="10dp"
+            android:hint="Student ID"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/osloGray"
+            android:textColorHint="@color/osloGray"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edit_text_shap"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/et_email"
+            android:hint="Email"
+            android:paddingLeft="10dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/osloGray"
+            android:textColorHint="@color/osloGray"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edit_text_shap"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/et_password"
+            android:hint="Password"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/osloGray"
+            android:textColorHint="@color/osloGray"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="textPassword"
+            android:background="@drawable/edit_text_shap"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/et_password_again"
+            android:hint="Confirm Password"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/osloGray"
+            android:textColorHint="@color/osloGray"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="textPassword"
+            android:background="@drawable/edit_text_shap"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/et_degree_title"
+            android:hint="Degree Title"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/osloGray"
+            android:textColorHint="@color/osloGray"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="text"
+            android:background="@drawable/edit_text_shap"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_registration"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:background="@color/colorBlue"/>
+
+
+        </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/progress" >
+    </ProgressBar>
+
+</RelativeLayout>

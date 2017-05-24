@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login_for_job_poster"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginForJobPoster"
+    android:background="@drawable/single_bg">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:id="@+id/back"
+        android:src="@drawable/back"
+        android:scaleType="fitXY"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Volunteery"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="20dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:id="@+id/et_email"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:textStyle="bold"
+            android:hint="Enter Email"
+            android:textAlignment="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edit_text_shap"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/et_password"
+            android:layout_gravity="center"
+            android:hint="Enter password"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edit_text_shap"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Click To Register"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/tv_register"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bt_login"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:textStyle="bold"
+        android:layout_marginBottom="60dp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_shap"/>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/progress" >
+    </ProgressBar>
+
+</RelativeLayout>

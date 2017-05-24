@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/single_bg">
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:id="@+id/back"
+        android:src="@drawable/back"
+        android:scaleType="fitXY"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Welcome Admin"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Manage Students"
+            android:textColor="@color/colorBlue"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:id="@+id/bt_mange_students"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_shap"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlue"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Manage Companies"
+            android:id="@+id/bt_manage_companies"
+            android:background="@drawable/button_shap"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlue"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Manage Activities"
+            android:id="@+id/bt_manage_activites"
+            android:background="@drawable/button_shap"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="View Report"
+            android:textColor="@color/colorBlue"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:id="@+id/bt_view_report"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_shap"/>
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlue"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Log Out"
+            android:id="@+id/bt_logout"
+            android:background="@drawable/button_shap"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

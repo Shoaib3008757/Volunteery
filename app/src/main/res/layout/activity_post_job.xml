@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_post_job"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostJob"
+    android:background="@drawable/single_bg">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:id="@+id/back"
+        android:src="@drawable/back"
+        android:scaleType="fitXY"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_title_company_name"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="Company Name"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_post_job"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:text="Post Activity"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:background="@drawable/button_shap"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_logout"
+        android:layout_below="@+id/bt_post_job"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Log Out"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shap"/>
+
+</RelativeLayout>

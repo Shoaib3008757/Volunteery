@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_posting_job"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostingJob"
+    android:background="@drawable/single_bg">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:id="@+id/back"
+        android:src="@drawable/back"
+        android:scaleType="fitXY"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_title"
+        android:text="Volunteery"
+        android:textColor="@color/colorWhite"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/white_box"
+        android:layout_below="@+id/tv_title"
+        android:id="@+id/whitlayout">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvsbactivituy"
+            android:text="Post Activity"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlue"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/et_company_name"
+            android:hint="Enter Comany Name"
+            android:paddingLeft="10dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/osloGray"
+            android:textColorHint="@color/osloGray"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/tvsbactivituy"
+            android:background="@drawable/edit_text_shap"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/et_jobTitle"
+            android:hint="Enter Activity"
+            android:layout_below="@+id/et_company_name"
+            android:paddingLeft="10dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/osloGray"
+            android:textColorHint="@color/osloGray"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edit_text_shap"/>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/et_jobType"
+            android:hint="Enter Activity Type"
+            android:paddingLeft="10dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/osloGray"
+            android:textColorHint="@color/osloGray"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/et_jobTitle"
+            android:background="@drawable/edit_text_shap"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/et_jobDescription"
+            android:hint="Enter Short Description"
+            android:paddingLeft="10dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/osloGray"
+            android:textColorHint="@color/osloGray"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/et_jobType"
+            android:background="@drawable/edit_text_shap"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/et_noOfVecancies"
+            android:hint="Enter No. Of Hours"
+            android:paddingLeft="10dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/osloGray"
+            android:textColorHint="@color/osloGray"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/et_jobDescription"
+            android:background="@drawable/edit_text_shap"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/et_company_email"
+            android:hint="Enter Comany Email"
+            android:paddingLeft="10dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/osloGray"
+            android:textColorHint="@color/osloGray"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/et_noOfVecancies"
+            android:background="@drawable/edit_text_shap"/>
+
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_post"
+        android:text="Post"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:background="@color/colorBlue"/>
+
+
+        </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/progress" >
+    </ProgressBar>
+
+
+    <WebView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/webViewForPush"
+        android:visibility="gone"></WebView>
+
+</RelativeLayout>

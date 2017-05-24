@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_view_company_activities"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.flytechnology.volunteery.ViewCompanyActivities"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:id="@+id/back"
+        android:src="@drawable/back"
+        android:scaleType="fitXY"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:id="@+id/pinlayout"
+    android:background="@color/voila">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_volunteer_record"
+        android:text="Companies List"
+        android:textColor="@color/colorWhite"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp" />
+
+
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/totalactivity"
+        android:layout_below="@+id/pinlayout"
+        android:background="@color/snuff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_total"
+            android:text="Total Activities"
+            android:textColor="@color/fiord"
+            android:layout_centerInParent="true"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="40dp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_totalactivity"
+            android:text="total"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/fiord"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_manage_company"
+        android:layout_below="@id/totalactivity"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="60dp"
+        android:divider="@color/opal"
+        android:dividerHeight="2dp"/>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/progress" >
+    </ProgressBar>
+
+
+</RelativeLayout>
